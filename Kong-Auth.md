@@ -9,14 +9,14 @@
 ##2. 설정방법
 - k8s와 Docker 가 설치되어 있어야 합니다.
 - 예제에서는 kind Cluster 를 사용하였습니다. (https://kind.sigs.k8s.io/)
-- API의 Kong / Kong2 Branch 를 사용하면됩니다. ( Kong = JWT, Kong2 = Oauth2 )
+- Vehicle API의 Kong / Kong2 Branch 를 사용하면됩니다. ( Kong = JWT, Kong2 = Oauth2 )
 - Docker 로 Vehicle API, Common API 가 동작 하고 있어야합니다.
-- 브랜치 변경후 각각 skaffold 를 통해 Dockerizing 과 k8s 환경으로 배포합니.
+- 브랜치 변경후 각각 skaffold 를 통해 Dockerizing 과 k8s 환경으로 배포합니다.
 
 ```shell script
 skaffold dev -p kind
 ```
-- 포트포워딩을 통해 Cluster 외부에서 접근가능하도록 한다.
+- 포트포워딩을 통해 Cluster 외부에서 접근가능하도록 합니다.
 ```shell script
 kubectl port-forward vehicle-api-5db5b5bb66-kj65h 9001:9001 -n vehicle
 ```
