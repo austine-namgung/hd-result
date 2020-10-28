@@ -1,6 +1,6 @@
 # Kong 설정
 
-##1. 개요
+## 1. 개요
 - Kong은 Cloud-Native 이며 빠르고 확장 가능 마이크로서비스추상화 계층 (API Gateway) 입니다.
 - Kong은 플러그인을 통해로드 밸런싱, 로깅, 인증, 속도 제한, 변환 등을 제공하면서 마이크로 서비스 요청에 대한 게이트웨이 역할을 수행 합니다.
 ![!](./Kong1.png "")
@@ -8,7 +8,7 @@
 - 설치는 Docker 기반으로 진행되었으며
 https://docs.konghq.com/install/docker/ 에서 Guide를 참고할수있습니다.
 - Docker 가 미리 설치 되어있어야 합니다.
-### Kong Database 설치
+## 2. Kong 설치
 1. Docker Network 만들기
 
     ```shell script
@@ -84,11 +84,11 @@ https://docs.konghq.com/install/docker/ 에서 Guide를 참고할수있습니다
        ![!](./Kong3.png "")
        Konga 과 연결할 Kong 의 정보를 입력합니다.
 
-##3. 결과화면
+## 3. 결과화면
 ![!](./Kong4.png "")
 설치완료시 http://localhost:1337/ 로 들어가서 다음과 같은 화면을 볼수있습니다.
 
-##4. 참조
+## 4. 참조
 - https://konghq.com/
 - https://pantsel.github.io/konga/
 

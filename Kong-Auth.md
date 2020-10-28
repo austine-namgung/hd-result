@@ -1,12 +1,12 @@
 # Kong 인증
 
-##1. 개요
+## 1. 개요
 - Kong 에서 제공하는 Basic-auth, APIKey, JWT, Oauth2 방식의 인증을 적용합니다.
 - Service, Route 를 만들어 Vehicle API 와 Common API 를 각각 연결합니다.
 - API 자원을 소비할 Consumer를 만듭니다.
 - Local Test 화면에서 Vehicle-Fe 를 호출하고 Vehicle-Fe 에서 설정된 Kong 주소를 호출합니다.
 
-##2. 설정방법
+## 2. 설정방법
 - k8s와 Docker 가 설치되어 있어야 합니다.
 - 예제에서는 kind Cluster 를 사용하였습니다. (https://kind.sigs.k8s.io/)
 - Vehicle API의 Kong / Kong2 Branch 를 사용하면됩니다. ( Kong = JWT, Kong2 = Oauth2 )
@@ -98,7 +98,7 @@ kubectl port-forward vehicle-api-5db5b5bb66-kj65h 9001:9001 -n vehicle
     
             
 
-##3. 결과화면
+## 3. 결과화면
 결과 화면은 Vehicle-fe branch 의  Web 폴더에 있으며 Auth0 의 JWT와 oauth2의 구분을 위해 kong/ kong2 branch 로 나눠서 생성하였습니다.
 (Auth0 로 토큰 요청시 JWT 토큰을 요청 하거나 일반 AccessToken 을 요청하는 구분이 필요함)
 
